@@ -1,4 +1,4 @@
-let Q1A1= "yellow";
+let img01 = document.getElementById("img01");
 let result = [];
 let bitH1 = document.getElementById("bitH1");
 
@@ -8,84 +8,59 @@ let button11 =document.getElementById("button11");
 let button12 =document.getElementById("button12");
 
 
-function question1(){
-    if(button01.clicked === true){
-        result.push(Q1A1);
-    }
-    if(button02.clicked === true){
-        result.push(Q1A2);
-    }else{
-        result.push(Q1A3)
-    }
-}
-function question2(){
-    if(button05.clicked === true){
-        result.push(Q2A1);
-    }
-    if(button06.clicked === true){
-        result.push(Q2A2);
-    }else{
-        result.push(Q2A3)
-    }
-}
-function question3(){
 
-    if(button09.clicked === true){
-        result.push(Q3A1);
-    }
-    if(button10.clicked === true){
-        result.push(Q3A2);
-    }else{
-        result.push(Q3A3)
-    }
-    
-}
-
-function nextQuestion(){
-    
-
-}
 function showResults(){
     //results starting at Question1 Answer1
     if(result.includes("Exercising")===true){
         //Q1A1 to Q2A1
         if(result.includes("Shark")===true){
             //Q1A1 to Q2A1 to Q3A1
-            if(result.includes("Red")===true){return "You're a grilled"
+            if(result.includes("Red")===true){
+                img01.src = "IMG_4709.JPG";
+                return "Hey there! Maybe take a few depp breaths, you look stressed"
         }
             //Q1A1 to Q2A1 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4701.JPG";
+                return "You are a bright shining star of a person"
             }else{
                 //Q1A1 to Q2A1 to Q3A3
-                return "You're a burger."
+                img01.src = "IMG_4709.JPG";
+                return "Hey there! Maybe take a few depp breaths, you look stressed"
             }
         }
         //Q1A1 to Q2A2
         if(result.includes("Bear")===true){
             //Q1A1 to Q2A2 to Q3A1
             if(result.includes("Red")===true){
-                return "You're a french fry"
+                img01.src = "IMG_4701.JPG";
+                return "You are a bright shining star of a person"
             }
             //Q1A1 to Q2A2 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4709.JPG";
+                return "Hey there! Maybe take a few depp breaths, you look stressed"
             }else{
                 //Q1A1 to Q2A2 to Q3A3
-                return "You're a burger."
+                img01.src = "IMG_4704.JPG";
+                return "Uh oh! Are you a little sleepy today?"
             }
         }
         //Q1A1 to Q2A3
         if(result.includes("Eagle")===true){
             //Q1A1 to Q2A3 to Q3A1
             if(result.includes("Red")===true){
-                return "You're a french fry"}
+                img01.src = "IMG_4701.JPG";
+                return "You are a bright shining star of a person"
+            }
             //Q1A1 to Q2A3 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4708.JPG"
+                return "Interesting answers! You must be the strong sensitive type"
             }else{
                 //Q1A1 to Q2A3 to Q3A3
-                return "You're a burger."
+                img01.src = "IMG_4704.JPG";
+                return "Uh oh! Are you a little sleepy today?"
             }
         }
     }
@@ -95,13 +70,17 @@ function showResults(){
         if(result.includes("Shark")===true){
             //Q1A2 to Q2A1 to Q3A1
             if(result.includes("Red")==true){
-                return "Interesting answers! You must be the strong sensitive type"}
+                img01.src = "IMG_4708.JPG"
+                return "Interesting answers! You must be the strong sensitive type"
+            }
             //Q1A2 to Q2A1 to Q3A2
             if(result.includes("Yellow")===true){
+                img01.src = "IMG_4704.JPG";
                 return "Uh oh! Are you a little sleepy today?"
             }else{
                 //Q1A2 to Q2A1 to Q3A3
-                return "Hey there! Maybe take a few depp breaths, you look stressed "
+                img01.src = "IMG_4709.JPG";
+                return "Hey there! Maybe take a few depp breaths, you look stressed"
 
             }
         }
@@ -109,26 +88,33 @@ function showResults(){
         if(result.includes("Bear")===true){
             //Q1A2 to Q2A2 to Q3A1
             if(result.includes("Red")===true){
-                return "You're a french fry"}
+                img01.src = "IMG_4701.JPG";
+                return "You are a bright shining star of a person"
+            }
             //Q1A2 to Q2A2 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4697.JPG";
+                return "You must be having a great year!"
             }else{
                 //Q1A2 to Q2A2 to Q3A3
-                return "You're a burger."
+                img01.src = "IMG_4708.JPG"
+                return "Interesting answers! You must be the strong sensitive type"
             }
         }
         //Q1A2 to Q2A3
         if(result.includes("Eagle")===true){
             //Q1A2 to Q2A3 to Q3A1
             if(result.includes("Q3A1")===true){
-                return "You're a french fry"}
+                img01.src = "IMG_4697.JPG";
+                return "You must be having a great year!"}
             //Q1A2 to Q2A3 to Q3A2
             if(result.includes("Q3A2")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4708.JPG"
+                return "Interesting answers! You must be the strong sensitive type"
             }else{
                 //Q1A2 to Q2A3 to Q3A3
-                return "You're a burger."
+                img01.src = "IMG_4704.JPG";
+                return "Uh oh! Are you a little sleepy today?"
             }
 
         }
@@ -139,10 +125,12 @@ function showResults(){
         if(result.includes("Shark")===true){
             //Q1A3 to Q2A1 to Q3A1
             if(result.includes("Red")===true){
-                return "You're a grilled"}
+                img01.src = "IMG_4704.JPG";
+                return "Uh oh! Are you a little sleepy today?";
             //Q1A3 to Q2A1 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4709.JPG";
+                return "Hey there! Maybe take a few depp breaths, you look stressed"
             }else{
                 //Q1A3 to Q2A1 to Q3A3
                 return "You're a burger."
@@ -152,10 +140,12 @@ function showResults(){
         if(result.includes("Bear")===true){
             //Q1A3 to Q2A2 to Q3A1
             if(result.includes("Red")===true){
-                return "You're a grilled"}
+                img01.src = "IMG_4701.JPG";
+                return "You are a bright shining star of a person"
+            }
             //Q1A3 to Q2A2 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                return "You must be having a great year!"
             }else{
                 //Q1A3 to Q2A2 to Q3A3
                 return "You're a burger."
@@ -165,13 +155,17 @@ function showResults(){
         if(result.includes("Eagle")===true){
             //Q1A3 to Q2A3 to Q3A1
             if(result.includes("Red")===true){
-                return "You're a grilled"}
+                img01.src = "IMG_4701.JPG";
+                return "You are a bright shining star of a person"
+            }
             //Q1A3 to Q2A3 to Q3A2
             if(result.includes("Yellow")===true){
-                return "You're a ice cream sundae"
+                img01.src = "IMG_4704.JPG";
+                return "Uh oh! Are you a little sleepy today?"
             }else{
                 //Q1A3 to Q2A3 to Q3A3
-                return "You're a burger."
+                img01.src = "IMG_4709.JPG";
+                return "Hey there! Maybe take a few depp breaths, you look stressed"
             }
         }
     }
