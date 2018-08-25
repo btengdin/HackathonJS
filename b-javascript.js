@@ -127,6 +127,7 @@ function showResults(){
             if(result.includes("Red")===true){
                 img01.src = "IMG_4704.JPG";
                 return "Uh oh! Are you a little sleepy today?";
+            }
             //Q1A3 to Q2A1 to Q3A2
             if(result.includes("Yellow")===true){
                 img01.src = "IMG_4709.JPG";
@@ -186,4 +187,3 @@ button09.addEventListener('click',addEventListener,question3);
 button10.addEventListener('click',addEventListener,question3);
 button11.addEventListener('click',addEventListener,question3);
 button12.addEventListener('click',addEventListener);
-
