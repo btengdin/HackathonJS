@@ -1,9 +1,9 @@
 let Q1A1= "yellow";
 let result = [];
-
+let bitH1 = document.getElementById("bitH1");
 
 let button09 =document.getElementById("button09");
-let button09 =document.getElementById("button10");
+let button10 =document.getElementById("button10");
 let button11 =document.getElementById("button11");
 let button12 =document.getElementById("button12");
 
@@ -46,14 +46,15 @@ function nextQuestion(){
 
 }
 function showResults(){
-    //results starting at Question1
-    if(result.contains("Q1A1")){
+    //results starting at Question1 Answer1
+    if(result.includes("Exercising")===true){
         //Q1A1 to Q2A1
-        if(result.contains("Q2A1")){
+        if(result.includes("Shark")===true){
             //Q1A1 to Q2A1 to Q3A1
-            if(result.contains("Q3A1")){return "You're a grilled"}
+            if(result.includes("Red")===true){return "You're a grilled"
+        }
             //Q1A1 to Q2A1 to Q3A2
-            if(result.contains("Q3A2")){
+            if(result.includes("Yellow")===true){
                 return "You're a ice cream sundae"
             }else{
                 //Q1A1 to Q2A1 to Q3A3
@@ -61,28 +62,118 @@ function showResults(){
             }
         }
         //Q1A1 to Q2A2
-        if(result.contains("Q2A2")){
+        if(result.includes("Bear")===true){
             //Q1A1 to Q2A2 to Q3A1
-            if(result.contains("Q3A1")){
-                return "You're a french fry"}
+            if(result.includes("Red")===true){
+                return "You're a french fry"
+            }
             //Q1A1 to Q2A2 to Q3A2
-            if(result.contains("Q3A2")){
+            if(result.includes("Yellow")===true){
                 return "You're a ice cream sundae"
             }else{
                 //Q1A1 to Q2A2 to Q3A3
                 return "You're a burger."
             }
         }
-        if(result.contains(Q2))
-    }
-    if(result.contains("Q1A2")){
-        if(result.contains("Q2A2")){
-            if(result.contains("Q3A2"))
+        //Q1A1 to Q2A3
+        if(result.includes("Eagle")===true){
+            //Q1A1 to Q2A3 to Q3A1
+            if(result.includes("Red")===true){
+                return "You're a french fry"}
+            //Q1A1 to Q2A3 to Q3A2
+            if(result.includes("Yellow")===true){
+                return "You're a ice cream sundae"
+            }else{
+                //Q1A1 to Q2A3 to Q3A3
+                return "You're a burger."
+            }
         }
     }
-    if(result.contains("Q1A3")){
+    //results starting at Question1 Answer2
+    if(result.includes("Reading")===true){
+        //Q1A2 to Q2A1
+        if(result.includes("Shark")===true){
+            //Q1A2 to Q2A1 to Q3A1
+            if(result.includes("Red")==true){
+                return "Interesting answers! You must be the strong sensitive type"}
+            //Q1A2 to Q2A1 to Q3A2
+            if(result.includes("Yellow")===true){
+                return "Uh oh! Are you a little sleepy today?"
+            }else{
+                //Q1A2 to Q2A1 to Q3A3
+                return "Hey there! Maybe take a few depp breaths, you look stressed "
 
+            }
+        }
+        //Q1A2 to Q2A2
+        if(result.includes("Bear")===true){
+            //Q1A2 to Q2A2 to Q3A1
+            if(result.includes("Red")===true){
+                return "You're a french fry"}
+            //Q1A2 to Q2A2 to Q3A2
+            if(result.includes("Yellow")===true){
+                return "You're a ice cream sundae"
+            }else{
+                //Q1A2 to Q2A2 to Q3A3
+                return "You're a burger."
+            }
+        }
+        //Q1A2 to Q2A3
+        if(result.includes("Eagle")===true){
+            //Q1A2 to Q2A3 to Q3A1
+            if(result.includes("Q3A1")===true){
+                return "You're a french fry"}
+            //Q1A2 to Q2A3 to Q3A2
+            if(result.includes("Q3A2")===true){
+                return "You're a ice cream sundae"
+            }else{
+                //Q1A2 to Q2A3 to Q3A3
+                return "You're a burger."
+            }
+
+        }
     }
+    ////results starting at Question1 Answer 3
+    if(result.includes("Sleeping")===true){
+        //Q1A3 to Q2A1
+        if(result.includes("Shark")===true){
+            //Q1A3 to Q2A1 to Q3A1
+            if(result.includes("Red")===true){
+                return "You're a grilled"}
+            //Q1A3 to Q2A1 to Q3A2
+            if(result.includes("Yellow")===true){
+                return "You're a ice cream sundae"
+            }else{
+                //Q1A3 to Q2A1 to Q3A3
+                return "You're a burger."
+            }
+        }
+        //Q1A3 to Q2A2
+        if(result.includes("Bear")===true){
+            //Q1A3 to Q2A2 to Q3A1
+            if(result.includes("Red")===true){
+                return "You're a grilled"}
+            //Q1A3 to Q2A2 to Q3A2
+            if(result.includes("Yellow")===true){
+                return "You're a ice cream sundae"
+            }else{
+                //Q1A3 to Q2A2 to Q3A3
+                return "You're a burger."
+            }
+        }
+        //Q1A3 to Q2A3
+        if(result.includes("Eagle")===true){
+            //Q1A3 to Q2A3 to Q3A1
+            if(result.includes("Red")===true){
+                return "You're a grilled"}
+            //Q1A3 to Q2A3 to Q3A2
+            if(result.includes("Yellow")===true){
+                return "You're a ice cream sundae"
+            }else{
+                //Q1A3 to Q2A3 to Q3A3
+                return "You're a burger."
+            }
+        }
     }
 }
 
