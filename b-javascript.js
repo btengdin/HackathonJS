@@ -5,7 +5,7 @@ q2:"hold", q3:"hold"}
 
 function question1(){
     
-if(Q1A1)
+if(Q1A1);
 }
 
 button01.addEventListener('click',question1);
