@@ -7,6 +7,12 @@ function question1(){
     
 if(Q1A1);
 }
+function question2(){
+
+}
+function question3(){
+    
+}
 
 button01.addEventListener('click',question1);
 button02.addEventListener('click',addEventListener);
